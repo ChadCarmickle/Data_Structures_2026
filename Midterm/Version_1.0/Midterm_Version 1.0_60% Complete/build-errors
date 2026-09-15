@@ -1,0 +1,7 @@
+g++ -pedantic-errors -fdiagnostics-color=always -g  -c main.cpp -o main.cpp.o
+g++ main.cpp.o -o main 
+/usr/bin/ld: main.cpp.o: in function `main':
+/workspaces/50c-202620-fa26-final-project-chadcarmickle/main.cpp:7:(.text+0x23): undefined reference to `GameFlow::GameFlow()'
+/usr/bin/ld: /workspaces/50c-202620-fa26-final-project-chadcarmickle/main.cpp:8:(.text+0x2f): undefined reference to `GameFlow::run()'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:13: main] Error 1
