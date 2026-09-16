@@ -1,0 +1,60 @@
+/'Plantuml diagram can be rendered using the PlantUML - Simple Viewer extension in VSCode
+This extension is already installed into CodeSpaces and Dev Containers.
+If installing for yourself, make sure to set the rendering server
+"plantuml.render": "PlantUMLServer",
+"plantuml.server": "https://www.plantuml.com/plantuml"
+To preview the diagram with the extension use the shortcut Alt+D
+'/
+@startuml character
+skinparam ClassAttributeIconSize 0
+class Character {
+    - characterName : std::string
+    - level : int
+    - health : int
+    - inventory : Inventory*
+    - inventorySize : int
+    - inventoryCapacity : int
+
+    + Character()
+    + Character(name : std::string, level : int, health : int)
+    + Character(other : const Character&)
+    + ~Character()
+    + operator=(other : const Character&) : const Character&
+
+    + getCharacterName() const : std::string
+    + getLevel() const : int
+    + getHealth() const : int
+    + getInventorySize() const : int
+
+    + setCharacterName(name : std::string) : void
+    + setLevel(level : int) : void
+    + setHealth(health : int) : void
+
+    + addItem(item : Inventory) : void
+    + removeItem(index : int) : void
+    + displayInventory() const : std::string
+    + resizeInventory() : void
+    
+    <<friend>> operator<<(outputStream : std::ostream&, characterToPrint : const Character&) : std::ostream&
+}
+
+class Inventory {
+    - itemName : std::string
+    - rarity : std::string
+    - value : int
+
+    + Inventory()
+    + Inventory(name : std::string, rarity : std::string, value : int)
+
+    + getItemName() : std::string
+    + getRarity() : std::string
+    + getValue() : int
+
+    + setItemName(name : std::string) : void
+    + setRarity(rarity : std::string) : void
+    + setValue(value : int) : void
+}
+
+Character *-- "0..*" Inventory : owns
+
+@enduml

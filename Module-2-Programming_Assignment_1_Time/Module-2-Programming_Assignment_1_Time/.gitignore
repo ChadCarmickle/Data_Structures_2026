@@ -1,0 +1,11 @@
+*.d
+*.o
+main
+clock.cpp
+clock.h
+clockexcept.h
+clockexcept.cpp
+makefile
+.devcontainer/*
+.test/*
+.vscode/*

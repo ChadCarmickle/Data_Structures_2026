@@ -1,0 +1,22 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:latest",
+	"features": {},
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {
+				"workbench.colorTheme": "Dark+",
+				"extensions.ignoreRecommendations": true,
+				"plantuml.render": "PlantUMLServer",
+				"plantuml.server": "https://www.plantuml.com/plantuml"
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack",
+				"github.vscode-github-actions",
+				"well-ar.plantuml"
+			]
+		}
+	},
+	"postCreateCommand": "conda install -y -c conda-forge libstdcxx-ng"
+}

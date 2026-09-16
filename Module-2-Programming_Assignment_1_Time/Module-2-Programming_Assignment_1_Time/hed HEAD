@@ -1,0 +1,20 @@
+[33mcommit 344aaf77348e4528d3125bec024ddcea7017ff49[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;33mtag: [m[1;33mfinished[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Chad Carmickle <54717796+ChadCarmickle@users.noreply.github.com>
+Date:   Tue Sep 1 14:56:54 2026 +0000
+
+    submit assignment
+
+[1mdiff --git a/main.cpp b/main.cpp[m
+[1mindex 0b96278..fa727c3 100644[m
+[1m--- a/main.cpp[m
+[1m+++ b/main.cpp[m
+[36m@@ -1,7 +1,8 @@[m
+ /* Program name: main.cpp[m
+  * Author: Chad Carmickle[m
+  * Date last updated: 8/31/26[m
+[31m- */[m
+[32m+[m[32m * Purpose: Clocktype input into object.[m[41m [m
+[32m+[m[32m*/[m
+ [m
+ /* Assignment: Module 2 Programming Assignment 1[m
+ Assignment: Time[m

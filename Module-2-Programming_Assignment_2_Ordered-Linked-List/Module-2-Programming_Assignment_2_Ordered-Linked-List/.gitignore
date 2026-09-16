@@ -1,0 +1,13 @@
+.devcontainer/*
+.vscode/*
+unit_test/*
+clock*
+linkedList.h
+linkedListIterator.h
+makefile
+node.h
+person.*
+snack.*
+*.o
+main*
+build/*

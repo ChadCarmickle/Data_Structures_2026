@@ -1,0 +1,13 @@
+schema: "classroom50/repo-config/v1"
+classroom: "50c-202620"
+assignment: "m03-programming-assignment-1"
+secret: "krfy4503"
+owner:
+  username: "ChadCarmickle"
+  id: 54717796
+  accepted_at: "2026-09-10T12:45:32Z"
+source:
+  owner: "CSCI202FW"
+  owner_id: 170132889
+  repo: "M03-Assign-1-Starter"
+  branch: "main"

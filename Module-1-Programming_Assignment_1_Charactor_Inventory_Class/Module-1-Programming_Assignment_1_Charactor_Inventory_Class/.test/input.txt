@@ -1,0 +1,11 @@
+Mario
+3
+20
+1up
+rare
+30
+y
+fireball
+common
+1
+n
